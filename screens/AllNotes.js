@@ -51,7 +51,7 @@ const AllNotes = ({ navigation }) => {
       const filteredNotes = data.notes.filter((note) => !note.trashed);
       const newNotes = filteredNotes.map((note) => (
         <ButtonComponent
-          key={note.id} // Agrega una clave única
+          key={note._id} // Agrega una clave única
           color={note.color}
           buttonDescription={note.description}
           onPress={() => {
